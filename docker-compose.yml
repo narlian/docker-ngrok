@@ -1,5 +1,5 @@
 server:
-  image: hteen/ngrok
+  image: registry.cn-hangzhou.aliyuncs.com/narlian/ngrok:1.0.1
   ports:
     - "8082:80"
     - "4432:443"
@@ -7,5 +7,5 @@ server:
   volumes:
     - /data/ngrok:/myfiles
   environment:
-    - DOMAIN="tunnel.hteen.cn"
+    - DOMAIN="tunnel.fire8.cc"
   command: /bin/sh /server.sh
